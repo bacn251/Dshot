@@ -149,7 +149,7 @@ void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef* tim_pwmHandle)
     hdma_tim2_ch1.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
     hdma_tim2_ch1.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
     hdma_tim2_ch1.Init.Mode = DMA_NORMAL;
-    hdma_tim2_ch1.Init.Priority = DMA_PRIORITY_LOW;
+    hdma_tim2_ch1.Init.Priority = DMA_PRIORITY_HIGH;
     hdma_tim2_ch1.Init.FIFOMode = DMA_FIFOMODE_ENABLE;
     hdma_tim2_ch1.Init.FIFOThreshold = DMA_FIFO_THRESHOLD_1QUARTERFULL;
     hdma_tim2_ch1.Init.MemBurst = DMA_MBURST_SINGLE;
@@ -170,7 +170,7 @@ void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef* tim_pwmHandle)
     hdma_tim2_up_ch3.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
     hdma_tim2_up_ch3.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
     hdma_tim2_up_ch3.Init.Mode = DMA_NORMAL;
-    hdma_tim2_up_ch3.Init.Priority = DMA_PRIORITY_LOW;
+    hdma_tim2_up_ch3.Init.Priority = DMA_PRIORITY_HIGH;
     hdma_tim2_up_ch3.Init.FIFOMode = DMA_FIFOMODE_ENABLE;
     hdma_tim2_up_ch3.Init.FIFOThreshold = DMA_FIFO_THRESHOLD_1QUARTERFULL;
     hdma_tim2_up_ch3.Init.MemBurst = DMA_MBURST_SINGLE;
@@ -207,7 +207,7 @@ void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef* tim_pwmHandle)
     hdma_tim5_ch1.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
     hdma_tim5_ch1.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
     hdma_tim5_ch1.Init.Mode = DMA_NORMAL;
-    hdma_tim5_ch1.Init.Priority = DMA_PRIORITY_LOW;
+    hdma_tim5_ch1.Init.Priority = DMA_PRIORITY_HIGH;
     hdma_tim5_ch1.Init.FIFOMode = DMA_FIFOMODE_ENABLE;
     hdma_tim5_ch1.Init.FIFOThreshold = DMA_FIFO_THRESHOLD_1QUARTERFULL;
     hdma_tim5_ch1.Init.MemBurst = DMA_MBURST_SINGLE;
@@ -228,7 +228,7 @@ void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef* tim_pwmHandle)
     hdma_tim5_ch3_up.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
     hdma_tim5_ch3_up.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
     hdma_tim5_ch3_up.Init.Mode = DMA_NORMAL;
-    hdma_tim5_ch3_up.Init.Priority = DMA_PRIORITY_LOW;
+    hdma_tim5_ch3_up.Init.Priority = DMA_PRIORITY_HIGH;
     hdma_tim5_ch3_up.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
     if (HAL_DMA_Init(&hdma_tim5_ch3_up) != HAL_OK)
     {
